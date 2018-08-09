@@ -6,33 +6,26 @@
 }
 
 
-.box {
+.box, .box2 {
     background-color: #fff;
     width: 960px;
     position: relative;
-    
+    margin-top: 50px;
     border: solid 5px #ddd;
-   
+    left: 20%;
     padding-left: 15px;
     padding-right: 15px;
   
 }
 
-
-
-/* QUERIES */
-@Media screen and (max-width: 768px) {
-
-    .box {
-        width: 100%;
-        background-color: #33ff44;
-    }
-
-    .heading {
-        width: 100%;
-
-    }
+.bodywrap {
+    height: 1024px;
+    width: 100%;
 }
+
+
+
+
 
 .name {
     background-color: #3b8e7e;
@@ -51,11 +44,29 @@
 
 .heading {
     height: 75px; 
-    background-color: #666666;
+    background-color: #666;
     border: solid 1px #cccccc;
     width: 100%;
    
 }
+/* QUERIES */
+@Media screen and (max-width: 768px) {
+
+    .box {
+        width: 100%;
+        
+        left: 0%;
+    }
+
+
+    p {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+
+}
+
+
 
 h1 {
     font-size: 30px;
@@ -73,6 +84,20 @@ h1 {
     padding: 10px;
  
 
+}
+
+
+@Media screen and (max-width: 525px) {
+
+    .f-right {
+        background-color: #666;
+        position: static;
+        float: none;
+        left: 25px;
+
+        
+    }
+    
 }
 
 .image1 {
@@ -145,7 +170,7 @@ footer {
 
 .btn {
     height: 30px;
-    width: 10%;
+    width: 75px;
     color: #fff;
     background-color: #3b8e7e;
     border: solid 2px #4aaaa5;
@@ -156,6 +181,13 @@ footer {
 .btn:hover {
     background-color: #ddd;
     color: #3b8e7e;
+}
+
+@Media screen and (max-width: 1200px) {
+    .box2 {
+        left: 0%;
+        width: 100%;
+    }
 }
 
 .container1 {
@@ -240,4 +272,3 @@ img {
     padding-top: 5px;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-
